@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* La caja no puede crecer mas del tamaño del especificado */
+}
+
+/* creamos las variables indicadas */
+:root{
+
+/* Primary */
+--Orange500: hsl(25, 97%, 53%);
+
+/* Neutral */
+--White: hsl(0, 100%, 100%);
+--Grey500: hsl(217, 12%, 63%);
+--Grey600: hsl(216, 12%, 24%);
+--Grey900: hsl(213, 19%, 18%);
+--Grey950: hsl(216, 12%, 8%);
+}
+
+body{
+  font-family: "Overpass", sans-serif;
+  background-color: var(--Grey950);
+  font-size: 15px;
+}
+
+.rating-state{
+    /* display: none; */
+}
+
+.rating-state,
+.thankyou-state
+{
+    background-color: var(--Grey900);
+    width: 327px;
+    height: 364px;
+    border-radius: 16px;
+    margin: 195px auto 80px;
+    padding: 24px;
+}
+
+.rating-state__icon-container,
+.rating-state__number-container__number
+{
+    background-color: var(--Grey600);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 22px;
+    color: var(--Grey500);
+    border: none;
+
+}
+
+.rating-state__title,
+.thankyou-state-title
+{
+    color: var(--White);
+    margin-bottom: 22px;
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+
+.rating-state__description,
+.thankyou-state-paragraph
+{
+    color: var(--Grey500);
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.rating-state__number-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-state__number-container__number:hover{
+    background-color: var(--Grey500);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.rating-state__number-container__number:focus{
+    background-color: var(--Orange500);
+    color: var(--White);
+
+}
+
+
+.rating-state__button{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Orange500);
+    color: var(--Grey950);
+    text-transform: uppercase;
+    font-weight:bolder;
+    font-weight: 700px;
+    letter-spacing: 3px;
+}
+
+.rating-state__button:hover{
+    background-color: var(--White);
+    color: var(--Orange500);
+    cursor: pointer;
+}
+
+
+
+
+/* --------------Thanyou State---------- */
+
+
+.thankyou-state{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thankyou-state__image{
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.thankyou-state__result{
+    background-color: var(--Grey600);
+    width: 170px;
+    height: 36px;
+    border-radius: 50px;
+    color: var(--Orange500);
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+
+.thankyou-state-paragraph{
+    /* border: 1px solid white; */
+    text-align: center;
+
+}
+
+
+
+.footer { 
+    font-size: 16px; 
+    text-align: center; }
+
+.footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+  
