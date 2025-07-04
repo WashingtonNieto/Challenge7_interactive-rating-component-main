@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./preview.jpg)
@@ -92,3 +93,6 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# Challenge7_interactive-rating-component-main
+>>>>>>> 776a703ffda21a48aec8d4b38713c33ccac77229
